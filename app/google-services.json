@@ -1,0 +1,28 @@
+{
+  "project_info": {
+    "project_number": "1082648991588",
+    "project_id": "gotoubb",
+    "storage_bucket": "gotoubb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1082648991588:android:44ed71eea3941e5e5d8c71",
+        "android_client_info": {
+          "package_name": "com.got.oubb" }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrBFzPYJXOmqFCOOwJc-b2afUglPofoyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

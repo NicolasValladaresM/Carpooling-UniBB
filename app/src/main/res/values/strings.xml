@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">gotoUBB</string>
+    <string name="solicitar">Solicitar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="default_notification_channel_id" />
+    <string name="channel_name" />
+    <string name="channel_description" />
+    <string name="nativation_open">Open</string>
+    <string name="navigation_close">Close</string>
+
+
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+    <string name="bot_n_para_oferente">Botón para oferente</string>
+    <string name="bot_n_para_el_solicitante">Botón para el solicitante</string>
+    <string name="infouser">Actualizar información <br /> de usuario</string>
+    <string name="iniciar_sesi">Iniciar sesión</string>
+    <string name="nombre">Nombre</string>
+
+
+
+    <string name="genero_prompt">Seleccione un género</string>
+    <string-array name="opciones_genero">
+        <item>Hombre</item>
+        <item>Mujer</item>
+    </string-array>
+
+    <string name="califica_al">
+Califica al conductor según como haya sido tu experiencia</string>
+
+
+    <string name="c_mo_fue_tu">
+¿Cómo fue tu experiencia de viaje?    </string>
+
+
+
+</resources>

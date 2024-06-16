@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToOutline="true"
+    android:background="#E0E0E0">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/blue_dark"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="305dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerlogin" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardlogin"
+        android:layout_width="282dp"
+        android:layout_height="301dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="194dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/i_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="294dp"
+        android:background="@drawable/email_ar"
+        android:elevation="9dp"
+
+        />
+
+
+
+    <View
+        android:id="@+id/p_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="343dp"
+        android:background="@drawable/pwcand"
+        android:elevation="9dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="217dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:text="@string/iniciar_sesi"
+        android:textStyle="bold"
+        android:textSize="33dp"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/textEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="284dp"
+        android:textSize="18sp"
+        android:hint="Correo Electrónico"
+        android:textColor="#000000"
+        android:textColorHint="#888585"
+        android:singleLine="true"
+        android:elevation="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="80dp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/textPwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="333dp"
+        android:textSize="18sp"
+        android:hint="Contraseña"
+        android:textColor="#000000"
+        android:textColorHint="#888585"
+        android:singleLine="true"
+        android:elevation="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="80dp"
+        android:inputType="textPassword"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="500dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta?"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+
+            />
+        <Button
+            android:id="@+id/regist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:text="Registrar"
+            android:textColor="@color/white"
+
+            />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="403dp"
+        android:elevation="9dp">
+
+        <Button
+            android:id="@+id/ingresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ing"
+            android:alpha="1"
+            android:text="Ingresar"
+            android:textColor="#ffffff"
+            android:elevation="9dp"/>
+
+        <View
+            android:id="@+id/in_co"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end|top"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ingcohe"
+            android:backgroundTint="@color/white"
+            android:elevation="9dp"/>
+    </FrameLayout>
+
+</FrameLayout>

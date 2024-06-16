@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/ingresarInf"
+            android:title=""
+            android:textColor="@color/black"
+            />
+        <item
+            android:id="@+id/origenUbi"
+            android:title=""
+            android:textColor="@color/white"
+            />
+        <item
+            android:id="@+id/filtros"
+            android:title=""
+            android:textColor="@color/white"
+            android:onClick="mostrarDialogoFiltro"
+            />
+    </group>
+
+
+</menu>
+
+

@@ -1,0 +1,113 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.got.oubb'
+    compileSdk 33
+    buildDir = 'C:/Users/STR/Desktop/salida'
+    defaultConfig {
+        applicationId "com.got.oubb"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = '11'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    //firebase
+    implementation(platform("com.google.firebase:firebase-bom:32.2.0"))
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+    //eventos popupdestino
+    //implementation 'org.greenrobot:eventbus:3.3.1'
+    implementation 'com.google.firebase:firebase-messaging-directboot:23.2.1'
+    implementation 'com.google.firebase:firebase-messaging:23.4.0'
+
+
+    implementation "androidx.drawerlayout:drawerlayout:1.2.0"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:1.2.0"
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    implementation 'androidx.core:core-ktx:1.10.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'androidx.annotation:annotation:1.6.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.6.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging-ktx:23.4.0'
+    implementation 'androidx.navigation:navigation-fragment:2.6.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.firebase:firebase-inappmessaging:20.4.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.google.firebase:firebase-database:20.2.2'
+    implementation 'com.google.firebase:firebase-database-ktx:20.2.2'
+    implementation 'com.google.firebase:firebase-messaging:23.2.0'
+
+    //mapa google api
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+
+    //para poder utilizar focusedlocation y obtener las coordenadas
+    implementation 'com.github.niqo01.rxplayservices:rx-play-services-location:0.4.0'
+
+
+
+    // V3
+
+    //conector mysql
+    //implementation 'mysql:mysql-connector-java:8.0.26'
+
+    //retrofit
+
+    //volley
+    implementation 'com.android.volley:volley:1.2.1'
+
+    // Para poder usar los markers flotantes (markers que no desaparecen incluso en navegacion)
+
+    implementation 'com.google.maps.android:android-maps-utils:3.4.0'
+
+
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-auth-ktx")
+
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:20.6.0")
+    // Import the BoM for the Firebase platform
+
+
+
+
+
+}
+
+//https://github.com/androidseb/android-google-maps-floating-marker-titles mostrar nombre fuera dle marker

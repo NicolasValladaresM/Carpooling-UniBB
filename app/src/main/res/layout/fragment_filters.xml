@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Filters"
+
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:background="@drawable/backgroundfilter"
+    android:layout_marginTop="20dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="90dp"
+    >
+
+
+    <View
+        android:id="@+id/mapubi"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@mipmap/filterazul"
+
+
+        android:layout_marginBottom="310dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="120dp"
+        android:text="Seleccione un filtro"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+
+
+
+
+
+        />
+
+
+
+    <Button
+        android:id="@+id/btnAll"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:text="Sin Filtros"
+        android:textColor="@color/white"
+
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <Button
+        android:id="@+id/btnHombre"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:text="Hombre"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAll"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnMujer"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+
+        android:text="Mujer"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnAll"
+        app:layout_constraintStart_toStartOf="@id/btnAll"
+        app:layout_constraintTop_toBottomOf="@+id/btnAll"
+
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnieci"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:text="IECI"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnHombre"
+
+        app:layout_constraintStart_toStartOf="@+id/btnHombre"
+        app:layout_constraintTop_toBottomOf="@+id/btnHombre"
+        />
+
+    <Button
+        android:id="@+id/btnici"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:text="ICI"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnieci"
+
+        app:layout_constraintStart_toStartOf="@+id/btnieci"
+        app:layout_constraintTop_toBottomOf="@+id/btnieci"
+       />
+
+    <Button
+        android:id="@+id/CPA"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:text="CPA"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+
+        app:layout_constraintEnd_toEndOf="@+id/btnMujer"
+        app:layout_constraintStart_toStartOf="@+id/btnMujer"
+        app:layout_constraintTop_toBottomOf="@+id/btnMujer" />
+
+    <Button
+        android:id="@+id/btnic"
+        android:layout_width="117dp"
+        android:layout_height="55dp"
+        android:text="IC"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+
+
+        app:layout_constraintEnd_toEndOf="@+id/CPA"
+        app:layout_constraintStart_toStartOf="@+id/CPA"
+        app:layout_constraintTop_toBottomOf="@+id/CPA"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

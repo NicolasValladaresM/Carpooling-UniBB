@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".InfoUser"
+    android:background="#E0E0E0"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/blue_dark"
+        />
+
+    <RelativeLayout
+        android:layout_height="305dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/headerinfoconfig"
+      />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardlogin"
+        android:layout_width="282dp"
+        android:layout_height="450dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="194dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Información de usuario"
+            android:layout_marginTop="20dp"
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/nameicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/personainfotarjet"
+                android:elevation="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Nombre"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    />
+
+                <EditText
+                    android:id="@+id/nombreset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="#888585"
+                    android:layout_marginTop="-10dp" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/nombreBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@mipmap/editvector"
+                android:layout_marginRight="30dp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/carrericon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/carrerapersonainfo"
+                android:elevation="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/carrera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Carrera "
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+
+
+                    android:layout_marginRight="80dp" />
+                <EditText
+                    android:id="@+id/carreraset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Carrera"
+                    android:textSize="20sp"
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#888585"
+                    android:layout_marginTop="-10dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/carreraBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@mipmap/editvector"
+                android:layout_marginRight="30dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/vehiculoView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/autoinfo"
+                android:elevation="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:visibility="invisible"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/vehiculoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Modelo y color"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:singleLine="true"
+
+
+                    />
+                <EditText
+                    android:id="@+id/vehiculoset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Modelo y color"
+                    android:textSize="20sp"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#888585"
+                    android:layout_marginTop="-10dp"
+                    android:visibility="invisible"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vehiculoBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                android:background="@mipmap/editvector"
+                android:layout_marginRight="30dp"
+                android:visibility="invisible"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="290dp"
+            android:orientation="horizontal">
+            <View
+                android:id="@+id/vehiculoViewPatante"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@mipmap/patente"
+                android:elevation="10dp"
+                android:visibility="invisible" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/vehiculoTextPatente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Patente"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/vehiculosetPatente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:hint="Patente"
+                    android:singleLine="true"
+                    android:textColor="#000000"
+                    android:textColorHint="#888585"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/vehiculoBtnPatente"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@mipmap/editvector"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="190dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            android:elevation="10dp"
+            >
+
+            <View
+                android:id="@+id/generoicon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@mipmap/generopersonatarget"
+                android:elevation="10dp"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroupGenderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:elevation="100dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="2dp"
+               android:layout_marginLeft="-10dp"
+
+                >
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:text="Hombre"
+                    android:textColor="#000000"
+
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-10dp"
+                    android:text="Mujer"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="142dp"
+        android:layout_marginTop="560dp"
+        android:elevation="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/guardarInf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="40dp"
+            android:text="Guardar"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="30dp"
+            android:textColor="@color/white"
+
+            />
+
+
+        <Button
+            android:id="@+id/Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="Cancelar"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/red_block"/>
+    </LinearLayout>
+
+</FrameLayout>
+
+
+
