@@ -1,4 +1,4 @@
-# App Móvil de Traslado para Usuarios UBB
+# App Móvil de Traslado para Usuarios UBB (Proyecto desarrollado como proyecto de título)
 
 Aplicación móvil Android dirigida a usuarios de la Universidad del Bío-Bío, con el objetivo de facilitar la coordinación de traslados entre usuarios, se espera que su uso sea gratuito para todos los usuarios apelando a un sentido humanitario entre los miembros de la comunidad universitaria, a futuro se espera ortorgar algun tipo de retribucion para los miembros e incentivar su uso. 
 
