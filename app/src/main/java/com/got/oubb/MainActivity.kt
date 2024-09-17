@@ -1155,7 +1155,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, ActivityResultRegi
         val url = "https://maps.googleapis.com/maps/api/directions/json?" +
                 "origin=${origin.latitude},${origin.longitude}" +
                 "&destination=${destination.latitude},${destination.longitude}" +
-                "&key=AIzaSyCFJx_C9_VLdH6NkYLl3BjJI5-76iSovIg"
+                "&key="
 
         val request = object : StringRequest(
             Method.GET, url,
