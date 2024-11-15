@@ -14,9 +14,9 @@ Aplicación móvil Android dirigida a usuarios de la Universidad del Bío-Bío, 
 6. En el dispositivo del usuario 2, de forma automática se abre un Pop-Up en el cual se muestran las opciones aceptar traslado o cancelar.
 7. El usuario 2 selecciona aceptar traslado.
 8. Se repite el punto #6 y #7 ahora para el usuario 1.
-9. Se ha realizado la coordinación entre usuarios, ahora está habilitado un botón "calificar".
+9. Se ha realizado la coordinación entre usuarios, ahora estará  habilitado un botón "calificar" tres minutos antes de llegar a destino.
 10. El usuario selecciona el botón y entre las tres opciones ("Bueno", "Malo", "Default"), selecciona la más acorde al servicio recibido.
-11. Aumenta en 1 el valor correspondiente al botón seleccionado para el usuario 2, afectando de este modo a su reputación (para esta versión solo el usuario que inició la secuencia puede calificar, actualmente en la app no se muestra información sobre reputación, actualmente solo se ve reflejada en la base de datos).
+11. Aumenta en 1 el valor correspondiente al botón seleccionado para el usuario 2, afectando de este modo a su reputación.
 
 ## La aplicacion actualmente también permite:
 
